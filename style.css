@@ -1,0 +1,70 @@
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+/* Estilo do container que vai conter as notas */
+#container {
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Borda cinza */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo branca */
+}
+
+/* Estilo das notas exibidas */
+.nota {
+    margin: 10px 0; /* Margem vertical */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #3bd1ff; /* Cor de fundo das notas */
+    border: 1px solid #ddd; /* Borda cinza claro */
+    position: relative; /* Para posicionar o botão de delete */
+}
+
+/* Estilo do botão de delete */
+.delete {
+    position: absolute; /* Posicionamento absoluto dentro da nota */
+    top: 5px; /* Distância do topo */
+    right: 5px; /* Distância da direita */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    padding: 5px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor em forma de mão */
+}
+
+/* Estilo do botão para adicionar notas */
+#adicionar {
+    margin-top: 10px; /* Margem superior */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #4caf50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor em forma de mão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+/* Efeito hover do botão adicionar */
+#adicionar:hover {
+    background-color: #45a049; /* Cor um pouco mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente de tamanho */
+}
+
+/* Estilo dos inputs */
+#nota1Input, #nota2Input, #nota3Input, #nota4Input, #materiaInput, #alunoInput {
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px; /* Margem */
+    width: calc(100% - 40px); /* Largura total, menos margens */
+    max-width: 580px; /* Largura máxima */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para a média e mensagem final */
+#total, #mensagemFinal {
+    margin-top: 20px; /* Margem superior */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+}
